@@ -1,115 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f4f4f4;
-        color: #222;
-      }
 
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 30px 20px 60px;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fred Karah | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-      h1 {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-      }
+<body>
+    <header class="hero">
+        <nav>
+            <div class="logo">FRED KARAH</div>
 
-      h2 {
-        margin-top: 30px;
-        color: #111;
-      }
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+                <a href="projects.html">PROJECTS</a>
+            </div>
+        </nav>
 
-      .profile-img {
-        width: 220px;
-        height: 220px;
-        border-radius: 12px;
-        object-fit: cover;
-        border: 3px solid #ddd;
-      }
+        <div class="hero-content">
+            <img
+                src="fred 2.jpg.jpeg"
+                alt="Professional photo of Fred Karah"
+                width="250"
+                height="250"
+                class="profile-photo"
+            >
 
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        margin: 25px 0;
-      }
+            <h1>Fred Karah</h1>
 
-      nav a {
-        text-decoration: none;
-        color: #111;
-        font-weight: bold;
-      }
+            <p class="tagline">
+                Aspiring Software Developer &amp; IT Student
+            </p>
+        </div>
+    </header>
 
-      ul, ol {
-        padding-left: 25px;
-      }
+    <main>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
 
-      footer {
-        margin-top: 30px;
-        padding-top: 20px;
-        border-top: 1px solid #ddd;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1><em>FRED KARAH</em><br /><strong>Aspiring software developer and IT student</strong></h1>
+            <p>
+                Hi, I am Fred Karah, a student at KCA University pursuing
+                Software Development. I am passionate about developing
+                software and improving my information technology skills.
+            </p>
 
-      <hr />
+            <p>
+                I am interested in technology, programming and learning
+                new skills that can help me become a professional software
+                developer. Outside academics, I enjoy football, tennis
+                and chess.
+            </p>
+        </section>
 
-      <img
-        class="profile-img"
-        src="https://raw.githubusercontent.com/ngumifred47-cyber/karah-portfolio/main/fred%202.jpg.jpeg"
-        alt="Fred Karah portrait"
-      />
+        <section class="interests-section">
+            <h2>My Interests</h2>
 
-      <nav>
-        <a href="about.html">ABOUT</a>
-        <a href="services.html">SERVICES</a>
-        <a href="contact.html">CONTACTS</a>
-        <a href="project.html">PROJECTS</a>
-      </nav>
+            <div class="interests">
+                <div class="interest-card">
+                    <h3>Football</h3>
+                    <p>
+                        I enjoy following and playing football.
+                    </p>
+                </div>
 
-      <section>
-        <h2>ABOUT ME</h2>
+                <div class="interest-card">
+                    <h3>Tennis</h3>
+                    <p>
+                        I enjoy tennis and learning about the sport.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <h3>Chess</h3>
+                    <p>
+                        I enjoy chess because it improves strategic thinking.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>My Skills</h2>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Web Development</span>
+                <span>Problem Solving</span>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+
+            <p>
+                I would be happy to connect with you.
+            </p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+                    <small id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message"
+                    ></textarea>
+                    <small id="messageError"></small>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <p id="formSuccess"></p>
+            </form>
+
+            <div class="contact-details">
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:2607611@students.kcau.ac.ke">
+                        2607611@students.kcau.ac.ke
+                    </a>
+                </p>
+
+                <p>
+                    <strong>GitHub:</strong>
+                    <a
+                        href="https://github.com/ngumifred47-cyber"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Visit my GitHub
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <p>
-          Hi, I am Fred Karah, a student at KCAU, undertaking
-          <strong>software development</strong>.<br />
-          I am passionate about developing programmes and advancing my IT skills.
+            &copy; 2026 Fred Karah. All rights reserved.
         </p>
-      </section>
+    </footer>
 
-      <section>
-        <h2>INTERESTS</h2>
-        <ol>
-          <li>Football</li>
-          <li>Tennis</li>
-          <li>Chess</li>
-        </ol>
-      </section>
+    <script src="script.js"></script>
+</body>
 
-      <section>
-        <h2>SKILLS</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </section>
-
-      <footer>
-        <p>&copy; 2026 Fred Karah.</p>
-        <p>Contact me: <a href="mailto:2607611@students.kcau.ac.ke">2607611@students.kcau.ac.ke</a></p>
-      </footer>
-    </div>
-  </body>
 </html>
